@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension
+	version="2.5"
+	type="template"
+	client="site">
+	<name>ImproveMyCity</name>
+	<creationDate>14/08/12</creationDate>
+	<author>ICOS URENIO</author>
+	<authorEmail>tsampoulatidis@gmail.gr</authorEmail>
+	<version>2.5</version>
+	<description>Template based on twitter's bootstrap for demonstrating improve my city</description>
+	<files>
+		<folder>assets</folder>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>raw.php</filename>
+	</files>
+
+	<positions>
+		<position>sidebar-a</position>
+		<position>position-7</position>
+		<position>footer</position>
+		<position>bottom-b</position>
+		<position>logo</position>
+		<position>toolbar-r</position>
+		<position>top-a</position>
+	</positions>
+</extension>
