@@ -150,7 +150,7 @@
 	<script src="templates/<?php echo $this->template ?>/js/jquery-1.7.2.min.js"></script>
 	<script src="templates/<?php echo $this->template ?>/js/jquery-ui-1.8.18.custom.min.js"></script>
 	-->
-    <script src="templates/<?php echo $this->template ?>/assets/js/bootstrap-min.js"></script>
+    <script src="templates/<?php echo $this->template ?>/assets/js/bootstrap.min.js"></script>
 	
   </body>
 </html>
