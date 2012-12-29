@@ -9,8 +9,14 @@
 
     <!-- Le styles -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans&subset=latin,greek-ext' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="templates/<?php echo $this->template ?>/assets/css/bootstrap.min.css" rel="stylesheet">
-	<!-- <link href="templates/<?php echo $this->template ?>/assets/css/bootstrap-responsive.min.css" rel="stylesheet"> -->
+	<link href="templates/<?php echo $this->template ?>/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    
+    
+
+
 	
 	<!-- Template CSS -->
 	<link rel="stylesheet" href="templates/<?php echo $this->template ?>/css/template.css" type="text/css" />	
@@ -29,6 +35,13 @@
 	
 	<!-- JDOC Head tag loads all the header and meta information from site config and content. -->
 	<jdoc:include type="head" />	
+	<style type="text/css">
+      .container-fluid {
+        margin: 0 auto;
+        max-width: 1140px;
+      }
+    </style>	
+	
   </head>
 
   <body id="page">
@@ -52,10 +65,10 @@
 		</div><!-- .fill -->
 	</header><!-- #branding -->
 
-	<div class="container">
+	<div class="container-fluid">
 		
 		<div id="mainmenu">
-			<div class="row">
+			<div class="row-fluid">
 				<div class="span12">
 
 					<div class="navbar">
@@ -83,7 +96,7 @@
 		<!-- main component content -->
 		<?php if($this->countModules('sidebar-a')) : ?>
 		
-		<div class="row">
+		<div class="row-fluid">
 			<div class="span9">
 				<div id="content">
 				<div id="content-main">
@@ -103,7 +116,7 @@
 		
 		<?php else : ?>
 		<div id="content">
-		<div class="row">
+		<div class="row-fluid">
 			<div class="span12">
 				<div id="content-main">
 					<jdoc:include type="message" />
@@ -122,7 +135,7 @@
 	<footer id="colophon" role="contentinfo">
 		<div id="beta">
 			<div class="container">
-				<div class="row">
+				<div class="row-fluid">
 					<div class="span12">
 						<jdoc:include type="modules" name="bottom-b" style="bottom-b" />
 					</div><!-- .span12 -->				
@@ -131,7 +144,7 @@
 		</div><!-- #beta -->
 		<div id="credits">
 			<div class="container">
-				<div class="row">
+				<div class="row-fluid">
 					<div class="span12">
 						<jdoc:include type="modules" name="footer" style="footer" />
 					</div><!-- .span12 -->				
@@ -147,9 +160,10 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 	<!--
-	<script src="templates/<?php echo $this->template ?>/js/jquery-1.7.2.min.js"></script>
+	
 	<script src="templates/<?php echo $this->template ?>/js/jquery-ui-1.8.18.custom.min.js"></script>
 	-->
+    <script src="templates/<?php echo $this->template ?>/js/jquery-1.7.2.min.js"></script>
     <script src="templates/<?php echo $this->template ?>/assets/js/bootstrap.min.js"></script>
 	
   </body>
