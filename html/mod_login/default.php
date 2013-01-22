@@ -7,8 +7,7 @@ defined('_JEXEC') or die;
 
 JHtml::_('behavior.keepalive');
 $document = JFactory::getDocument();
-//TODO: change path.. do NOT relate with imc component 
-$document->addScript(JURI::root(true).'/components/com_improvemycity/bootstrap/js/bootstrap.min.js');
+$document->addScript(JURI::root(true).'/templates/improvemycity/assets/js/bootstrap.min.js');
 
 JHTML::_('behavior.modal', 'a.modalwin', array('handler' => 'ajax')); /* fix */
 ?>
