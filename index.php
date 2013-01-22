@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans&subset=latin,greek-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans&subset=latin,greek-ext' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="templates/<?php echo $this->template ?>/assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="templates/<?php echo $this->template ?>/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!-- Le fav and touch icons -->
