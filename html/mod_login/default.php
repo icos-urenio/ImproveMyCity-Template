@@ -8,7 +8,7 @@ defined('_JEXEC') or die;
 JHtml::_('behavior.keepalive');
 $document = JFactory::getDocument();
 //TODO: change path.. do NOT relate with imc component 
-//$document->addScript(JURI::root(true).'/components/com_improvemycity/bootstrap/js/bootstrap.min.js');
+$document->addScript(JURI::root(true).'/components/com_improvemycity/bootstrap/js/bootstrap.min.js');
 
 JHTML::_('behavior.modal', 'a.modalwin', array('handler' => 'ajax')); /* fix */
 ?>
@@ -19,9 +19,10 @@ JHTML::_('behavior.modal', 'a.modalwin', array('handler' => 'ajax')); /* fix */
 		<?php if ($params->get('greeting')) : ?>
 		<div class="greeting">
 			<?php if ($params->get('name') == 0) : {
-				$greet = JText::sprintf('MOD_LOGIN_HINAME', $user->get('name'));
+				//$greet = JText::sprintf('MOD_LOGIN_HINAME', $user->get('name'));
+				$greet = $user->get('name');
 			} else : {
-				$greet = JText::sprintf('MOD_LOGIN_HINAME', $user->get('username'));
+				$greet = $user->get('username');
 			} endif; ?>
 		</div>
 		<?php endif; ?>
