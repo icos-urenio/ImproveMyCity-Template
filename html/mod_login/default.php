@@ -8,9 +8,9 @@ defined('_JEXEC') or die;
 JHtml::_('behavior.keepalive');
 $document = JFactory::getDocument();
 //TODO: change path.. do NOT relate with imc component 
-$document->addScript(JURI::root(true).'/components/com_improvemycity/bootstrap/js/bootstrap.min.js');
+//$document->addScript(JURI::root(true).'/components/com_improvemycity/bootstrap/js/bootstrap.min.js');
 
-JHTML::_('behavior.modal', 'a.modal', array('handler' => 'ajax')); /* fix */
+JHTML::_('behavior.modal', 'a.modalwin', array('handler' => 'ajax')); /* fix */
 ?>
 <div id="mod-login">
 <?php if ($type == 'logout') : ?>
@@ -47,8 +47,9 @@ JHTML::_('behavior.modal', 'a.modal', array('handler' => 'ajax')); /* fix */
 		$usersConfig = JComponentHelper::getParams('com_users');
 		if ($usersConfig->get('allowUserRegistration')) : ?>
 			<div class="btn-group">
-			<a class="btn modal" rel="{size: {x: 270, y: 320}}" href="index.php?option=com_users&view=login&tmpl=component&return=<?php echo $return; ?>"><?php echo JText::_('JLOGIN');?></a>
-			<a class="btn" href="index.php?option=com_users&view=registration&return=<?php echo $return; ?>"><?php echo JText::_('MOD_LOGIN_REGISTER');?></a>
+				
+				<a class="btn modalwin" rel="{size: {x: 270, y: 360}}" href="index.php?option=com_users&view=login&tmpl=component&return=<?php echo $return; ?>"><?php echo JText::_('JLOGIN');?></a>
+				<a class="btn" href="index.php?option=com_users&view=registration&return=<?php echo $return; ?>"><?php echo JText::_('MOD_LOGIN_REGISTER');?></a>
 			</div>		
 		<?php else : ?>
 			<a class="btn modal" rel="{size: {x: 270, y: 320}}" href="index.php?option=com_users&view=login&tmpl=component&return=<?php echo $return; ?>"><?php echo JText::_('JLOGIN');?></a>		

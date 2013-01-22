@@ -50,8 +50,8 @@
 
 	<header id="branding" role="banner">
 		<div class="fill">
-			<div class="container">
-				<div class="row">
+			<div class="container-fluid">
+				<div class="row-fluid">
 					<div class="span8">
 						<h1 id="site-title">
 						<jdoc:include type="modules" name="logo" style="logo" />
@@ -82,7 +82,7 @@
 						  <a class="brand" href="index.php"><jdoc:include type="modules" name="top-a" style="top-a" /></a>
 						  <div class="nav-collapse">
 							<ul class="nav pull-right">
-							  <jdoc:include type="modules" name="position-7" style="" />
+							  <jdoc:include type="modules" name="menu" style="" />
 							</ul>
 						  </div><!--/.nav-collapse -->
 						</div>
