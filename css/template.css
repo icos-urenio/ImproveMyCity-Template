@@ -144,3 +144,7 @@ h1#site-title, div#site-title {
 
 #credits a, #credits a:visited { color: #ccc; }
 #credits a:hover { color: #fff; }
+
+/* =Bootstrap override
+----------------------------------------------- */
+.btn-group { font-size: 13px; }
