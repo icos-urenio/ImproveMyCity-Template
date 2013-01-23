@@ -8,6 +8,8 @@ defined('_JEXEC') or die;
 JHtml::_('behavior.keepalive');
 $document = JFactory::getDocument();
 $document->addScript(JURI::root(true).'/templates/improvemycity/assets/js/bootstrap.min.js');
+$document->addStyleSheet(JURI::root(true).'/templates/improvemycity/assets/css/bootstrap.min.css');	
+$document->addStyleSheet(JURI::root(true).'/templates/improvemycity/assets/css/bootstrap-responsive.min.css');	
 
 JHTML::_('behavior.modal', 'a.modalwin', array('handler' => 'ajax')); /* fix */
 ?>

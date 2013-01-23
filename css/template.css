@@ -148,3 +148,19 @@ h1#site-title, div#site-title {
 /* =Bootstrap override
 ----------------------------------------------- */
 .btn-group { font-size: 13px; }
+
+
+
+/* =Media Queries
+----------------------------------------------- */
+@media (max-width: 768px){
+	h1#site-title, div#site-title {
+		text-align: center;
+	}
+	#mod-login {
+		float: none;
+		padding: 8px 0;
+		text-align: center;
+	}
+}
+
