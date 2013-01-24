@@ -126,6 +126,49 @@ h1#site-title, div#site-title {
 	border-radius: 4px;
 }
 
+/* =HeaderMenu
+----------------------------------------------- */
+	
+	.appsmenu-wrapper .navbar{margin-bottom: 0;}
+	
+	#appsmenu {
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 10px;
+	}
+	
+	#appsmenu .nav {
+	background-color: #dd322d;
+	}
+
+	
+	#appsmenu .nav > li > a {
+		padding: 10px 12px 11px;
+		color: #fff;
+		
+	}
+	
+	#appsmenu .divider-vertical {
+		height: 40px;
+		width: 1px;
+		margin: 0;
+		overflow: hidden;
+		background-color: #ddd;
+		border-right: 1px solid #eee;
+	}
+
+	#appsmenu .nav .active > a, .navbar .nav .active > a:hover {
+		color: #ffffff;
+		background-color: #313337;
+		border-radius: none;
+	}
+	
+	#appsmenu .nav > li > a:hover {
+		background-color: #313337;
+		border-radius: 0px;
+	}
+
+
 /* =Footer
 ----------------------------------------------- */
 #beta {

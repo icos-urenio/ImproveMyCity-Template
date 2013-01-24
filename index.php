@@ -62,6 +62,37 @@
 					</div>
 				</div>
 			</div>
+			
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span12">
+			
+						<div class="appsmenu-wrapper">
+						<div class="navbar" id="appsmenu">
+						  <div class="navbar-inner2">
+							<div class="container">
+							  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							  </a>
+							  <div class="nav-collapse">
+								<ul class="nav">
+								  <jdoc:include type="modules" name="headermenu" style="headermenu" />
+								</ul>
+							  </div><!--/.nav-collapse -->
+							</div>
+						  </div>
+						</div>			
+						</div>
+			
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
 		</div><!-- .fill -->
 	</header><!-- #branding -->
 
@@ -163,8 +194,27 @@
 	
 	<script src="templates/<?php echo $this->template ?>/js/jquery-ui-1.8.18.custom.min.js"></script>
 	-->
-    <script src="templates/<?php echo $this->template ?>/js/jquery-1.7.2.min.js"></script>
+    <script src="templates/<?php echo $this->template ?>/js/jquery-1.8.1.min.js"></script>
     <script src="templates/<?php echo $this->template ?>/assets/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="//www.hellobar.com/hellobar.js"></script>
+	<script type="text/javascript">
+	new HelloBar(59815,86811);
+	</script>	
+	
+	<script type="text/javascript">
+	  var _gauges = _gauges || [];
+	  (function() {
+		var t   = document.createElement('script');
+		t.type  = 'text/javascript';
+		t.async = true;
+		t.id    = 'gauges-tracker';
+		t.setAttribute('data-site-id', '5091569cf5a1f55eb7000008');
+		t.src = '//secure.gaug.es/track.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(t, s);
+	  })();
+	</script>	    
 	
   </body>
 </html>

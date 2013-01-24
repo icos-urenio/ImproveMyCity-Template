@@ -8,8 +8,6 @@ defined('_JEXEC') or die;
 JHtml::_('behavior.keepalive');
 $document = JFactory::getDocument();
 $document->addScript(JURI::root(true).'/templates/improvemycity/assets/js/bootstrap.min.js');
-$document->addStyleSheet(JURI::root(true).'/templates/improvemycity/assets/css/bootstrap.min.css');	
-$document->addStyleSheet(JURI::root(true).'/templates/improvemycity/assets/css/bootstrap-responsive.min.css');	
 
 JHTML::_('behavior.modal', 'a.modalwin', array('handler' => 'ajax')); /* fix */
 ?>
@@ -54,7 +52,7 @@ JHTML::_('behavior.modal', 'a.modalwin', array('handler' => 'ajax')); /* fix */
 				<a class="btn" href="index.php?option=com_users&view=registration&return=<?php echo $return; ?>"><?php echo JText::_('MOD_LOGIN_REGISTER');?></a>
 			</div>		
 		<?php else : ?>
-			<a class="btn modalwin" rel="{size: {x: 270, y: 360}}" href="index.php?option=com_users&view=login&tmpl=component&return=<?php echo $return; ?>"><?php echo JText::_('JLOGIN');?></a>		
+			<a class="btn modal" rel="{size: {x: 270, y: 320}}" href="index.php?option=com_users&view=login&tmpl=component&return=<?php echo $return; ?>"><?php echo JText::_('JLOGIN');?></a>		
 		<?php endif; ?>
 
 <?php endif; ?>
