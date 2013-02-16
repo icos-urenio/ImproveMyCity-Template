@@ -102,6 +102,13 @@ h1#site-title, div#site-title {
 	font-weight: 700;
 	font-size: 22px;
 }
+#mainmenu .navbar .brand p{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #790101;
+	font-weight: 700;
+	font-size: 22px;
+	display:inline;
+}
 #mainmenu  .navbar .nav > li > a {
 	color: #790101;
 	text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
@@ -205,5 +212,25 @@ h1#site-title, div#site-title {
 		padding: 8px 0;
 		text-align: center;
 	}
+	
+	.navbar .nav > li {
+		display: inline-block;
+		float: none;	
+		width: 100%;
+	}
+	
+
+	.navbar .nav.pull-right {float: none; width: 100%;}		
 }
 
+@media(max-width: 480px) {
+
+
+	.navbar .nav > li {
+		display: inline-block;
+		float: none;	
+	}
+	
+	.navbar .nav.pull-right {float: none; width: 100%;}	
+	
+}

@@ -13,10 +13,6 @@
     <link href="templates/<?php echo $this->template ?>/assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="templates/<?php echo $this->template ?>/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
 
-    
-    
-
-
 	
 	<!-- Template CSS -->
 	<link rel="stylesheet" href="templates/<?php echo $this->template ?>/css/template.css" type="text/css" />	
@@ -104,19 +100,14 @@
 
 					<div class="navbar">
 					  <div class="navbar-inner">
-						<div class="container">
-						  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						  </a>
+						
 						  <a class="brand" href="index.php"><jdoc:include type="modules" name="top-a" style="top-a" /></a>
-						  <div class="nav-collapse">
+
 							<ul class="nav pull-right">
 							  <jdoc:include type="modules" name="menu" style="" />
 							</ul>
-						  </div><!--/.nav-collapse -->
-						</div>
+
+						
 					  </div>
 					</div>					
 					
