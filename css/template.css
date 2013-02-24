@@ -135,7 +135,7 @@ h1#site-title, div#site-title {
 
 /* =HeaderMenu
 ----------------------------------------------- */
-	
+
 	.appsmenu-wrapper .navbar{margin-bottom: 0;}
 	
 	#appsmenu {
@@ -152,7 +152,7 @@ h1#site-title, div#site-title {
 	#appsmenu .nav > li > a {
 		padding: 10px 12px 11px;
 		color: #fff;
-		
+		text-shadow: none;	
 	}
 	
 	#appsmenu .divider-vertical {
@@ -175,6 +175,24 @@ h1#site-title, div#site-title {
 		border-radius: 0px;
 	}
 
+	#appsmenu .nav > li {
+		border-right: 1px solid #EEEEEE;
+	}
+	#appsmenu .nav > li:last-child {
+		border-right: medium none;
+	}
+	#appsmenu .nav > li > a {
+		color: #FFFFFF;
+		padding: 10px 12px 11px;
+	}
+	#appsmenu .nav > li > a:hover {
+		background-color: #313337;
+		border-radius: 0 0 0 0;
+	}
+	#appsmenu .nav .active > a, .navbar .nav .active > a:hover {
+		background-color: #313337;
+		color: #FFFFFF;
+	}
 
 /* =Footer
 ----------------------------------------------- */
